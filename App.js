@@ -2,30 +2,9 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
-
-function EventsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Events!</Text>
-    </View>
-  );
-}
-
-function ContactScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Contact!</Text>
-    </View>
-  );
-}
+import HomeScreen from "./screens/HomeScreen";
+import EventsScreen from "./screens/EventsScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 const Tab = createBottomTabNavigator();
 
