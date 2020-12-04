@@ -11,10 +11,18 @@ function HomeScreen() {
   );
 }
 
-function SettingsScreen() {
+function EventsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
+      <Text>Events!</Text>
+    </View>
+  );
+}
+
+function ContactScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Contact!</Text>
     </View>
   );
 }
@@ -26,7 +34,8 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Events" component={EventsScreen} />
+        <Tab.Screen name="Contact" component={ContactScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
