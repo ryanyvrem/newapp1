@@ -22,9 +22,9 @@ export default function App() {
           if (route.name === 'Home') {
             iconName = "ios-home";
           } else if (route.name === 'Events') {
-            iconName = focused ? 'ios-list-box' : 'ios-list';
+            iconName = 'ios-list';
           } else if (route.name === 'Contact') {
-            iconName = "ios-people";
+            iconName = 'ios-book';
           }
   
           // You can return any component that you like here!
